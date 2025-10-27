@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker Prototype - Final Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Symptom Checker Prototype</h1>
+        <p class="intro">
+            Welcome to the prototype for your final project. Enter your symptoms below, and the system will provide potential associations and specialist recommendations based on its limited dataset.
+        </p>
+
+        <p class="disclaimer">
+            **DISCLAIMER:** This is for educational demonstration only. It is NOT a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional.
+        </p>
+
+        <section id="input-area">
+            <h2>1. Describe Your Symptoms</h2>
+            <textarea id="symptom-input" rows="5" placeholder="Enter your symptoms separated by commas (e.g., severe headache, nausea, light sensitivity, stomach pain)"></textarea>
+            <button onclick="checkSymptoms()">Check Symptoms</button>
+        </section>
+
+        <section id="results-area">
+            <h2>2. Potential Associations & Advice</h2>
+            <div id="output">
+                <p class="info">Enter your symptoms above to receive specialist recommendations.</p>
+            </div>
+        </section>
+        
+        <section id="mock-directory">
+            <a href="#" class="cta-button">Find a Doctor Now (Mock Directory)</a>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
